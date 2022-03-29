@@ -5218,30 +5218,30 @@ button.close {
 }
 
 .slideOne {
-  background: url('/common/img/carousel/welcome_videos_banner.jpg');
+  background: url('/profitsharing/common/img/carousel/welcome_videos_banner.jpg');
 }
 .slideOne .carousel-content {
   width: 100%;
 }
 /* Slide 2 */
 .slideTwo {
-  background: url('/common/img/carousel/annualreport_banner.jpg');
+  background: url('/profitsharing/common/img/carousel/annualreport_banner.jpg');
 }
 /* Slide 3 */
 .slideThree {
-  background: url('/common/img/carousel/newenhancements_banner.jpg');
+  background: url('/profitsharing/common/img/carousel/newenhancements_banner.jpg');
 }
 /* Slide 4 */
 .slideFour {
-  background: url('/common/img/carousel/driveyoursavings_banner.jpg');
+  background: url('/profitsharing/common/img/carousel/driveyoursavings_banner.jpg');
 }
 /* Slide 5 */
 .slideFive {
-  background: url('/common/img/carousel/whatkindofinvestor_banner.jpg');
+  background: url('/profitsharing/common/img/carousel/whatkindofinvestor_banner.jpg');
 }
 /* Slide 6 */
 .slideSix {
-  background: url('/common/img/carousel/moneywhenyouneedit_banner.jpg');
+  background: url('/profitsharing/common/img/carousel/moneywhenyouneedit_banner.jpg');
 }
 
 .hero-buttons {
