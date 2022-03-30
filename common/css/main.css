@@ -4444,7 +4444,6 @@ a:focus:after {
 }
 .heading-wrapper h2 {
   text-align: center;
-  margin-bottom: 0;
   margin-top: 12px;
 }
 @media only screen and (min-width: 768px) {
@@ -5218,32 +5217,35 @@ button.close {
 }
 
 .slideOne {
-  background: url('/profitsharing/common/img/carousel/welcome_videos_banner.jpg');
+  background: url('../img/carousel/welcome_videos_banner.jpg');
 }
 .slideOne .carousel-content {
   width: 100%;
 }
 /* Slide 2 */
 .slideTwo {
-  background: url('/profitsharing/common/img/carousel/annualreport_banner.jpg');
+  background: url('../img/carousel/annualreport_banner.jpg');
 }
 /* Slide 3 */
 .slideThree {
-  background: url('/profitsharing/common/img/carousel/newenhancements_banner.jpg');
+  background: url('../img/carousel/newenhancements_banner.jpg');
 }
 /* Slide 4 */
 .slideFour {
-  background: url('/profitsharing/common/img/carousel/driveyoursavings_banner.jpg');
+  background: url('../img/carousel/driveyoursavings_banner.jpg');
 }
 /* Slide 5 */
 .slideFive {
-  background: url('/profitsharing/common/img/carousel/whatkindofinvestor_banner.jpg');
+  background: url('../img/carousel/whatkindofinvestor_banner.jpg');
 }
 /* Slide 6 */
 .slideSix {
-  background: url('/profitsharing/common/img/carousel/moneywhenyouneedit_banner.jpg');
+  background: url('../img/carousel/moneywhenyouneedit_banner.jpg');
 }
 
+.slideOne .carousel-content {
+  width: 100% !important;
+}
 .hero-buttons {
   display: block;
   position: absolute;
@@ -5268,8 +5270,11 @@ button.close {
   left: 0;
   padding: 3em 5em;
   color: #fff;
-  width: 65%;
+  width: 65% !important;
   height: 100%;
+}
+.carousel .carousel-item .background {
+  box-shadow: unset;
 }
 
 .carousel-content h1 {
@@ -5286,10 +5291,17 @@ button.close {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.carousel .carousel-pagination {
+  left: 49%;
+}
 
-/* Features  (Home) */
 .feature {
   border-right: 1px solid #d1d3d4;
+}
+
+.newsletter {
+  background-image: none;
+  background: #c00;
 }
 
 /* Internal Pages */
@@ -5315,11 +5327,94 @@ button.close {
 .heading-graphic:after {
   display: none;
 }
-.vid-thumb {
-  width: 100%;
-  height: 240px;
+.vid-thumb-wrapper {
+  width: 67%;
 }
 
+.one-third-icon {
+  margin-top: 0 !important;
+}
+.one-third-icon.calendar-coin {
+  width: 85px;
+}
+.one-third-icon.hour-counter {
+  padding-top: 2em;
+}
+.one-third-icon.calendar-may-one {
+  width: 85px;
+}
+.icon-wrapper .exit-ct {
+  width: 60px;
+}
+.icon-wrapper .sixty-five-circle {
+  width: 60px;
+}
+.icon-wrapper .retirement-sign {
+  width: 145px;
+}
+.icon-wrapper .ct-building {
+  width: 60px;
+}
+.icon-wrapper .money-house {
+  width: 65px;
+}
+.icon-wrapper .hold-money {
+  width: 78px;
+}
+.icon-text-sidexside .icon-wrapper {
+  width: 50%;
+}
+.icon-wrapper .laptop {
+  width: 90px;
+}
+.icon-wrapper .money-speech {
+  width: 72px;
+}
+.icon-wrapper .ct-certificate {
+  width: 60px;
+}
+.icon-wrapper .fifty-pie {
+  width: 60px;
+}
+.call {
+  width: 20% !important;
+}
+.call img {
+  width: 50px !important;
+  padding-top: 16px;
+}
+.contact-sidexside.call .icon-wrapper {
+  padding-top: 17px;
+}
+
+.plan-item {
+  display: flex;
+  align-items: center;
+}
+.plan-item h4 {
+  margin-left: 1em;
+  border-bottom: 0;
+}
+.plan-item h4:after {
+  display: none;
+}
+.top-align {
+  align-items: unset;
+}
+.btn-mobile-menu .bar {
+  width: 30px;
+  height: 3px;
+  box-shadow: unset;
+}
+.btn-mobile-menu .bar.mid {
+  top: 10px;
+}
+.btn-mobile-menu .bar.bot {
+  top: 20px;
+}
+.btn-mobile-menu {
+  margin-top: 10px;
+}
 /* Footer */
 .related-links > * {
   white-space: nowrap;
@@ -5336,6 +5431,9 @@ button.close {
 
   .heading-graphic h1 {
     padding-left: 5rem;
+  }
+  .vid-thumb-wrapper {
+    width: 82%;
   }
 }
 
@@ -5370,12 +5468,8 @@ button.close {
   .heading-graphic h1 {
     padding-left: 3rem;
   }
-  .vid-thumb-wrapper {
-    text-align: center;
-  }
-  .vid-thumb {
-    width: 80%;
-    height: 320px;
+  .icon-text-sidexside .icon-wrapper {
+    width: 30%;
   }
 }
 
@@ -5383,6 +5477,7 @@ button.close {
   .carousel-content h1 {
     font-size: 32px;
   }
+
   .hero-buttons {
     margin-top: 2em;
     display: flex;
@@ -5400,6 +5495,19 @@ button.close {
   }
   .heading-graphic h1 {
     padding-left: 2rem;
+  }
+  .vid-thumb-wrapper {
+    width: 89%;
+  }
+  .call {
+    width: 5.5em !important;
+  }
+  .call img {
+    width: 44px !important;
+  }
+  .one-third-icon.calendar-coin,
+  .one-third-icon.calendar-may-one {
+    width: 60px;
   }
 }
 @media only screen and (max-width: 500px) {
